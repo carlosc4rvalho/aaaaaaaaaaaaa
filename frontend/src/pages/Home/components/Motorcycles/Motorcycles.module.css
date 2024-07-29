@@ -1,0 +1,62 @@
+.motorcyclesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+    padding: 10%;
+    gap: 3rem;
+    background-image: url("assets/images/background5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.motorcyclesContainer header {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    color: var(--white);
+}
+
+.motorcyclesContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.motorcyclesContent > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    max-width: 100%;
+} 
+
+.motorcyclesContent > a span {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.motorcyclesContainer > a {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--green);
+    font-weight: var(--font-medium);
+}
+
+.motorcyclesContainer > a:hover {
+    opacity: .8;
+}
+
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 768px) {
+    .motorcyclesContent {
+        flex-direction: row;
+        gap: 10%;
+    }
+}

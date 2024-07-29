@@ -1,0 +1,57 @@
+.depoimentosContainer {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    padding: 10%;
+    gap: 3rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url("assets/images/background6.png");
+}
+
+.depoimentosContainer header {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.depoimentosConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.depoimento img {
+    max-width: 75px
+}
+
+.depoimento span {
+    font-weight: var(--font-semi-bold);
+    color: var(--red);
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 768px) {
+    .depoimentosConteudo {
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .depoimento {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 25%;
+    }
+}

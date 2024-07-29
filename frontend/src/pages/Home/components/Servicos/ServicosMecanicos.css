@@ -1,0 +1,52 @@
+.ServicosMecanicosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("assets/images/background6.png");
+}
+
+.ServicosMecanicosContainer section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10%;
+    gap: 2rem;
+    color: var(--white);
+}
+
+.ServicosMecanicosContainer section a {
+    background-color: var(--green);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.ServicosMecanicosContainer section a:hover {
+    opacity: .8;
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 768px) {
+    .ServicosMecanicosContainer {
+        justify-content: flex-end;
+        min-height: 100dvh;
+        background-image: url("assets/images/background3.png");
+    }
+
+    .ServicosMecanicosContainer section {
+        max-width: 50%;
+        padding: 10% 5%;
+    }
+
+    .ServicosMecanicosContainer section a {
+        background-color: var(--green);
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        max-width: 30%;
+    }
+}

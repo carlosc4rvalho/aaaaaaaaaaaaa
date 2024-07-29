@@ -1,0 +1,22 @@
+{
+  "name": "Bacana Motors",
+  "short_name": "Bacana Motors",
+  "description": "Marketing & Escola.",
+  "start_url": "/admin",
+  "display": "standalone",
+  "background_color": "#21061B",
+  "theme_color": "#21061B",
+  "developer": {
+    "name": "Agência Dorac",
+    "url": "https://dorac.com.br"
+  },
+
+  "icons": [
+    {
+      "src": "./logo512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

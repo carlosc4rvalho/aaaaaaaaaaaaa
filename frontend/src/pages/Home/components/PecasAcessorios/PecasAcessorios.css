@@ -1,0 +1,51 @@
+.PecasAcessoriosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("assets/images/background5.png");
+}
+
+.PecasAcessoriosContainer section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 10%;
+    gap: 2rem;
+    color: var(--white);
+}
+
+.PecasAcessoriosContainer section a {
+    background-color: var(--green);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.PecasAcessoriosContainer section a:hover {
+    opacity: .8;
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 768px) {
+    .PecasAcessoriosContainer {
+        justify-content: flex-start;
+        min-height: 100dvh;
+        background-image: url("assets/images/background4.png");
+    }
+
+    .PecasAcessoriosContainer section {
+        max-width: 50%;
+        padding: 10% 5%;
+    }
+
+    .PecasAcessoriosContainer section a {
+        background-color: var(--green);
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        max-width: 35%;
+    }
+}
